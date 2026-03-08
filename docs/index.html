@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tech & PC Deals</title>
+    <!-- Modern Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --price: #10b981;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+            color: var(--text-main);
+        }
+
+        .card-price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--price);
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-left: 0.5rem;
+        }
+
+        .discount {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--price);
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .btn {
+            margin-top: auto;
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--accent);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daily Tech Deals</h1>
+        <p class="subtitle">The best, hand-picked PC parts and gaming gear. Updated March 08, 2026, 07:24 PM.</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="12ct 1.4oz KIND Nut Bars (Dark Chocolate Nuts and Sea Salt) $9.50 w/ S&S" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">12ct 1.4oz KIND Nut Bars (Dark Chocolate Nuts and Sea Salt) $9.50 w/ S&S</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$12</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19283511-sns-9-49-12-count-1-4-oz-kind-bars-dark-chocolate-nuts-and-sea-salt-at-amazon-79-1-each?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="VERONLY 6 Shelf Hanging Closet Organizer (50" x 11.8") $8" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">VERONLY 6 Shelf Hanging Closet Organizer (50" x 11.8") $8</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$6</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19283727-6-shelf-veronly-hanging-closet-foldable-organizer-storage-w-bamboo-support-3-colors-7-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="VITURE Luma Pro XR Glasses & USB-C XR Adapter Pro Bundle $329 + Free S/H" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">VITURE Luma Pro XR Glasses & USB-C XR Adapter Pro Bundle $329 + Free S/H</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$329</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19282800-viture-luma-pro-xr-glasses-usb-c-xr-adapter-pro-bundle-329?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="Slickdeals Daily Draw Giveaway – Enter Now for a Chance to Win! (See Official Rules)" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Slickdeals Daily Draw Giveaway – Enter Now for a Chance to Win! (See Official Rules)</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$0.00</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/18822175-slickdeals-daily-draw-giveaway-enter-now-for-a-chance-to-win-see-official-rules?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="5.5-Oz Gold Bond Healing Hydrating Lotion w/ Aloe $2.35 w/ S&S" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">5.5-Oz Gold Bond Healing Hydrating Lotion w/ Aloe $2.35 w/ S&S</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$5</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19283121-gold-bond-healing-hydrating-lotion-with-aloe-moisturizes-heals-smooths-dry-skin-body-lotion-delivers-immediate-24-hour-hydration-convenient-size-5-5-oz-1-84-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="LEGO Toddler Short-Sleeve Graphic Tee (Various) $2.40" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">LEGO Toddler Short-Sleeve Graphic Tee (Various) $2.40</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$2.40</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19281927-lego-toddlers-short-sleeve-graphic-crewneck-t-shirt-various-2-39-free-s-h-w-walmart-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="Refurb: Microsoft Surface Laptop 4: 13.5" 2256x1504, i7-1185G7, 16GB RAM, 256GB $280 + Free S/H w/ Prime" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Refurb: Microsoft Surface Laptop 4: 13.5" 2256x1504, i7-1185G7, 16GB RAM, 256GB $280 + Free S/H w/ Prime</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$4</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19283592-microsoft-surface-laptop-4-refurb-s-d-13-5-3-2-ips-touch-i7-1185g7-16gb-lpddr4-256gb-ssd-win-11-pro-279-99?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="32-Oz Hydro Flask Insulated Water Bottle w/ Wide Mouth Flex Lid (White) $21" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">32-Oz Hydro Flask Insulated Water Bottle w/ Wide Mouth Flex Lid (White) $21</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$32</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19279902-32-oz-hydro-flask-insulated-steel-wide-flex-bottle-white-or-tonal-white-21-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="Sennheiser HD 600 Open-Back Dynamic Wired Headphones $265 + Free S/H" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Sennheiser HD 600 Open-Back Dynamic Wired Headphones $265 + Free S/H</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$600</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19280517-sennheiser-hd-600-open-back-dynamic-wired-headphones-black-265-00-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="10-Lb NOW Sports Whey Isolate Protein Powder (Creamy Chocolate) $76 + Free S/H" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">10-Lb NOW Sports Whey Isolate Protein Powder (Creamy Chocolate) $76 + Free S/H</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$10</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19283445-10-lb-now-sports-whey-isolate-protein-powder-creamy-chocolate-76-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="Super Mario 3D World + Bowser's Fury (Switch) $40 + Free S/H" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">Super Mario 3D World + Bowser's Fury (Switch) $40 + Free S/H</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$3</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19282668-super-mario-3d-world-bowser-s-fury-switch-40-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Top+Deal" alt="adidas Men's Adilette Aqua Slides (Preloved Ink / Dark Blue) $8 + Free S/H" class="card-img">
+            <div class="card-content">
+                <h2 class="card-title">adidas Men's Adilette Aqua Slides (Preloved Ink / Dark Blue) $8 + Free S/H</h2>
+                <div class="card-price-row">
+                    <div>
+                        <span class="price">$8</span>
+                        
+                    </div>
+                    
+                </div>
+                <!-- This links to the product using YOUR affiliate tag -->
+                <a href="https://slickdeals.net/f/19282893-adidas-men-adilette-aqua-slides-preloved-ink-dark-blue-preloved-ink-8-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2?tag=your_amazon_tag-20" target="_blank" class="btn">View Deal on Amazon</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Daily Tech Deals. As an Amazon Associate I earn from qualifying purchases.</p>
+    </footer>
+
+</body>
+</html>

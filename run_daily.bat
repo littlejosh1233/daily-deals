@@ -13,9 +13,13 @@ echo Generating fresh HTML...
 python generate_site.py
 
 echo.
+echo Pushing updates to live website...
+git add docs/index.html
+git commit -m "Auto-update daily deals %DATE%"
+git push origin main
+
+echo.
 echo ===================================
-echo Done! 
-echo Next step: To fully automate this, add git commit/push commands here.
-echo Set this script to run daily in Windows Task Scheduler.
+echo Done! The website has been updated live.
 echo ===================================
 pause
